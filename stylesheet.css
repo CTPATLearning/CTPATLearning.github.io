@@ -1,0 +1,45 @@
+.navbar-default{
+	position: fixed
+	font-size: 30pt
+	border-color:#e2543b;
+	margin-bottom: 250px;
+
+}
+
+.jumbotron{
+	top:100px
+}
+
+#logo{
+	margin: auto;
+}
+
+video {
+display:block;
+margin:0 auto;
+}
+
+
+iframe{
+	display:block;
+	margin:0 auto;
+}
+
+.navigationBar{
+	   position: fixed;
+}
+
+#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ 
+  background-size: cover;
+  transition: 1s opacity;
+}

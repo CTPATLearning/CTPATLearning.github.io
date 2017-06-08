@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ 
+ <head>
+ <title>C-TPAT Training Portal</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="stylesheet.css" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> 
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+ </head>
+
+
+<!-- Navigation Bar -->
+ <body>
+	 <nav class="navbar navbar-default">
+	 	<div class="container-fluid">
+    	  		 <div class="navbar-header">
+      			 <a class="navbar-brand" href="index.html"> C-TPAT Learning Portal<!-- <img alt="Brand" src="unnamed.png" style="width:80px;height:35px;"> --></a>
+   		 </div>
+   	 	<ul class="nav navbar-nav">
+      			 <li><a href="denied.html">Log in below to access online learning resources and electronically log your training!</a></li>
+  	  </ul>
+  	 
+  </div>
+</nav> 
+</div>
+<!--End Navigation Bar -->
+
+<video poster="bgvideo.mp4" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="bgvideo.mp4" type="video/mp4">
+</video>
+
+<!--Jumbotron -->
+<div class = "container">
+<div class="jumbotron">
+<h1>C-TPAT Online Learning Portal Login</h1>
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+    if (!pass1) 
+    history.go(0);
+if (pass1.toLowerCase() == "letmein") {
+alert('You Got it Right!');
+window.open('info.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+</div>
+</div>
+
+<!-- EndJumbotron -->
+
+
+
+
+</body>
+</html>
