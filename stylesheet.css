@@ -1,11 +1,8 @@
+
 .navbar-default{
-	
-	font-size: 30pt
-	border-color:#e2543b;
-	margin-bottom: 250px;
+    margin-bottom: 250px;
 
 }
-
 .jumbotron{
 	top:100px
 }
@@ -25,9 +22,6 @@ iframe{
 	margin:0 auto;
 }
 
-.navigationBar{
-	   position: fixed;
-}
 
 #bgvid { 
     position: fixed;
